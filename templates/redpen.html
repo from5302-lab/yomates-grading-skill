@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- 빨간 펜 첨삭본 빈 틀. redpen.py가 중괄호 두 겹 자리 표시만 채운다. 예시 값은 넣지 않는다. -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: pen; src: local("Nanum Pen Script"), local("NanumPenScript-Regular"), url("{{글꼴}}"); }
+html, body { margin: 0; background: #fff; }
+.sheet { position: relative; width: {{가로}}px; height: {{세로}}px; }
+.sheet img { position: absolute; left: 0; top: 0; width: {{가로}}px; height: {{사진세로}}px; }
+.sheet svg { position: absolute; left: 0; top: 0; }
+.pen { font-family: pen, cursive; fill: {{대표색}}; stroke: #fff; paint-order: stroke; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <img src="{{사진}}" alt="">
+  <svg width="{{가로}}" height="{{세로}}" viewBox="0 0 {{가로}} {{세로}}">
+{{표시}}
+  </svg>
+</div>
+</body>
+</html>
